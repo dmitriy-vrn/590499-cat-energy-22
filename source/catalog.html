@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo">
         <img src="img/logo-mobile.png" alt="Кэт энерджи" width="191" height="38">
       </a>
       <nav class="main-nav">
@@ -17,14 +17,14 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a>Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a>Подбор программы</a>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -33,111 +33,206 @@
 
   <main class="page-main">
 
-    <h1 class="visually-hidden">Кэт-энерджи - магазин функционального питания для котов</h1>
+    <h1 class="page-main__title">Каталог продукции</h1>
 
-    <section class="program-selection">
-      <div class="program-selection__wrapper">
-        <h2 class="program-selection__title">Подбор программы</h2>
-        <p class="program-selection__tagline">Заполните анкету, и мы подберем
-          программу питания для вашего кота</p>
-        <form class="program-selection__form program-form" action="https://echo.htmlacademy.ru">
-          <fieldset class="program-form__section ">
-            <legend class="visually-hidden">Введите информацию о коте</legend>
-            <ul class="program-form__list">
-              <li>
-                <label class="program-form__field">ИМЯ:<sup>*</sup>
-                  <input class="program-form__input" type="text" name="cat-name" id="cat-name" placeholder="барсик"
-                    required>
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Вес (кг):<sup>*</sup>
-                  <input class="program-form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7"
-                    required>
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Возраст (лет):
-                  <input class="program-form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+    <section class="catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item product">
+          <div class="product__inner">
+            <img class="product__img" src="img/catalog-chicken-small.png"
+              alt="Cat Energy PRO 500 грамм со вкусом курицы">
+            <div class="product__info-block">
+              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <dl class="product__info">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
 
-          <fieldset class="program-form__section ">
-            <legend class="visually-hidden">Выберите программу питания</legend>
-            <ul class="program-form__list">
-              <li>
-                <label class="program-form__field">Похудение
-                  <input class="program-form__input" type="radio" name="program" value="slimming" id="slimming" checked>
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Набор массы
-                  <input class="program-form__input" type="radio" name="program" value="weight-gain" id="weight-gain"
-                    placeholder="7">
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Не знаю (Нужен ваш совет)
-                  <input class="program-form__input" type="radio" name="program" value="advice" id="advice"
-                    placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+                <dt>Вкус</dt>
+                <dd>Курица</dd>
 
-          <fieldset class="program-form__section ">
-            <legend class="program-form__title">Контактные данные (владельца кота)</legend>
-            <ul class="program-form__list">
-              <li>
-                <label class="program-form__field">E-mail:<sup>*</sup>
-                  <input class="program-form__input program-form__input--email" type="email" name="email" id="email"
-                    placeholder="kuklachev@gmail.com" required>
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Телефон:<sup>*</sup>
-                  <input class="program-form__input program-form__input--phone" type="tel" name="phone" id="phone"
-                    placeholder="8 (960) 900-60-90" rebquired>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+                <dt>Цена</dt>
+                <dd>700 Р.</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="button product__button" href="#">заказать</a>
+        </li>
+        <li class="catalog__item product">
+          <div class="product__inner">
+            <img class="product__img" src="img/catalog-chicken-big.png"
+              alt="Cat Energy PRO 1000 грамм со вкусом курицы">
+            <div class="product__info-block">
+              <h3 class="product__title">Cat Energy PRO 100 г</h3>
+              <dl class="product__info">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
 
-          <fieldset class="program-form__section">
-            <legend class="program-form__title">Комментарий</legend>
-            <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
+                <dt>Вкус</dt>
+                <dd>Курица</dd>
 
-          <fieldset class="program-form__section">
-            <legend class="program-form__title">Дополнительно</legend>
-            <ul class="program-form__list">
-              <li>
-                <label class="program-form__field">Сахарозаменитель
-                  <input class="program-form__input" type="checkbox" name="sweetener" id="sweetener" checked>
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Питьевая вода
-                  <input class="program-form__input" type="checkbox" name="water" id="water">
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Молоко
-                  <input class="program-form__input" type="checkbox" name="milk" id="milk">
-                </label>
-              </li>
-              <li>
-                <label class="program-form__field">Витамины
-                  <input class="program-form__input" type="checkbox" name="vitamins" id="vitamins">
-                </label>
-              </li>
-            </ul>
-            <button class="button" type="submit">отправить заявку</button>
-            <small class="program-form__legend"><sup>*</sup> — Обязательные поля</small>
-          </fieldset>
-        </form>
+                <dt>Цена</dt>
+                <dd>1000 Р.</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="button product__button" href="#">заказать</a>
+        </li>
+        <li class="catalog__item product">
+          <div class="product__inner">
+            <img class="product__img" src="img/catalog-fish-small.png" alt="Cat Energy PRO 500 грамм со вкусом рыбы">
+            <div class="product__info-block">
+              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <dl class="product__info">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+
+                <dt>Вкус</dt>
+                <dd>Рыба</dd>
+
+                <dt>Цена</dt>
+                <dd>700 Р.</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="button product__button" href="#">заказать</a>
+        </li>
+        <li class="catalog__item product">
+          <div class="product__inner">
+            <img class="product__img" src="img/catalog-fish-small.png" alt="Cat Energy PRO 1000 грамм со вкусом рыбы">
+            <div class="product__info-block">
+              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              <dl class="product__info">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+
+                <dt>Вкус</dt>
+                <dd>Рыба</dd>
+
+                <dt>Цена</dt>
+                <dd>1000 Р.</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="button product__button" href="#">заказать</a>
+        </li>
+        <li class="catalog__item product">
+          <div class="product__inner">
+            <img class="product__img" src="img/catalog-buckwheat-small.png"
+              alt="Cat Energy PRO 500 грамм со вкусом гречки">
+            <div class="product__info-block">
+              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <dl class="product__info">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+
+                <dt>Вкус</dt>
+                <dd>Гречка</dd>
+
+                <dt>Цена</dt>
+                <dd>400 Р.</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="button product__button" href="#">заказать</a>
+        </li>
+        <li class="catalog__item product">
+          <div class="product__inner">
+            <img class="product__img" src="img/catalog-buckwheat-big.png"
+              alt="Cat Energy PRO 500 грамм со вкусом гречки">
+            <div class="product__info-block">
+              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              <dl class="product__info">
+                <dt>Масса</dt>
+                <dd>1000 г</dd>
+
+                <dt>Вкус</dt>
+                <dd>Гречка</dd>
+
+                <dt>Цена</dt>
+                <dd>700 Р.</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="button product__button" href="#">заказать</a>
+        </li>
+        <li class="catalog__item product">
+          <div class="product__inner">
+            <img class="product__img" src="img/catalog-rice-small.png" alt="Cat Energy PRO 500 грамм со вкусом риса">
+            <div class="product__info-block">
+              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <dl class="product__info">
+                <dt>Масса</dt>
+                <dd>500 г</dd>
+
+                <dt>Вкус</dt>
+                <dd>Рис</dd>
+
+                <dt>Цена</dt>
+                <dd>500 Р.</dd>
+              </dl>
+            </div>
+          </div>
+          <a class="button product__button" href="#">заказать</a>
+        </li>
+        <li class="catalog__item product product--more">
+          <div class="product__inner">
+            <div class="product__info-block">
+              <h3 class="product__title">Показать еще 100500 товаров</h3>
+              <p class="product__lead">На самом деле вкусов гораздо больше!</p>
+            </div>
+          </div>
+          <a class="button button--more" href="#">показать все</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="extra">
+      <h2 class="extra__title">Дополнительные товары</h2>
+      <ul class="extra__list">
+        <li class="extra__item">
+          <div class="extra__inner">
+            <h3 class="extra__name">Сахарозаменитель</h3>
+            <dl>
+              <dt>1 упаковка (100 г)</dt>
+              <dd>200 Р.</dd>
+            </dl>
+          </div>
+          <a class="button extra__button" href="#">заказать</a>
+        </li>
+        <li class="extra__item">
+          <div class="extra__inner">
+            <h3 class="extra__name">питьевая вода</h3>
+            <dl>
+              <dt>5 литров</dt>
+              <dd>50 Р.</dd>
+            </dl>
+          </div>
+          <a class="button extra__button" href="#">заказать</a>
+        </li>
+        <li class="extra__item">
+          <div class="extra__inner">
+            <h3 class="extra__name">молоко</h3>
+            <dl>
+              <dt>1 литр</dt>
+              <dd>100 Р.</dd>
+            </dl>
+          </div>
+          <a class="button extra__button" href="#">заказать</a>
+        </li>
+        <li class="extra__item">
+          <div class="extra__inner">
+            <h3 class="extra__name">витамины</h3>
+            <dl>
+              <dt>1 упаковка (30 г)</dt>
+              <dd>300 Р.</dd>
+            </dl>
+          </div>
+          <a class="button extra__button" href="#">заказать</a>
+        </li>
+      </ul>
+      <div class="extra__promo">
+        <p class="extra__promo-text">Закажите все <br>и получите чехол для кота &nbspв подарок!</p>
       </div>
     </section>
 
