@@ -1,0 +1,37 @@
+.contacts {
+  .contacts__wrapper {
+    width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .contacts__cooperation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $title-color;
+    text-transform: uppercase;
+    font-family: "Oswald", "Arial", sans-serif;
+    display: block;
+    max-width: 140px;
+    margin: 0;
+  }
+
+  .contacts__address {
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    display: block;
+    max-width: 140px;
+  }
+
+  .contacts__map {
+    margin-top: 26px;
+  }
+}

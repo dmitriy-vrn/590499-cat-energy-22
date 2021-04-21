@@ -1,0 +1,12 @@
+.slider {
+  .slider__button {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: $title-color;
+    font-family: "Oswald", "Arial", sans-serif;
+    cursor: pointer;
+  }
+}

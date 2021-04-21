@@ -1,0 +1,26 @@
+.instruction {
+  .instruction__wrapper {
+    width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .instruction__title {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 38px;
+  }
+
+  .instruction__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .instruction__item {
+    padding-left: 80px;
+  }
+}
