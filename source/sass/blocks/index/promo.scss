@@ -5,36 +5,36 @@
   background-size: 100%;
   background-position: top;
   padding-top: 27px;
+}
 
-  .promo__wrapper {
-    width: 320px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
+.promo__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
-  .promo__title {
-    color: $basic-white;
-    font-size: 36px;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 25px;
-  }
+.promo__title {
+  color: $basic-white;
+  font-size: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
 
-  .promo__tagline {
-    color: $basic-white;
-    font-size: 14px;
-    line-height: 14px;
-    font-family: "Oswald", "Arial", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 29px;
-  }
+.promo__tagline {
+  color: $basic-white;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+}
 
-  .promo__button {
-    width: 280px;
-    min-height: 40px;
-  }
+.promo__button {
+  width: 280px;
+  min-height: 40px;
 }
