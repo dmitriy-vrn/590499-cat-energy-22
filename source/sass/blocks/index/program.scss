@@ -1,0 +1,34 @@
+.program {
+  margin-top: 22px;
+}
+
+.program__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-color;
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.program__item {
+  background-color: $basic-grey;
+  padding: 30px 33px 22px 20px;
+  margin-bottom: 22px;
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}

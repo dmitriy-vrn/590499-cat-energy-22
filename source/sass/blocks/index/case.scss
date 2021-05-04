@@ -1,0 +1,56 @@
+.case {
+  background-color: $basic-grey;
+  padding-top: 27px;
+  margin-bottom: 33px;
+}
+
+.case__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.case__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: $title-color;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.case__text {
+  margin: 0;
+}
+
+.case__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.case__value {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: $title-color;
+}
+
+.case__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.case__cost {
+  font-size: 14px;
+  line-height: 20px;
+  color: $title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}

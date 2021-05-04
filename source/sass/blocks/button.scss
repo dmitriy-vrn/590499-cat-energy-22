@@ -1,0 +1,15 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 44px;
+  color: $basic-white;
+  background: $basic-green;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
