@@ -1,9 +1,46 @@
 .page-footer {
   background-color: $basic-grey;
+  padding-top: 39px;
+  padding-bottom: 22px;
 }
 
 .page-footer__wrapper {
-  width: 320px;
   padding: 0 20px;
-  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.page-footer__list {
+  list-style: none;
+  padding: 24px 0;
+  margin: 0;
+  margin-bottom: 31px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+}
+
+.page-footer__copyright {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  color: $font-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 27px;
+    height: 34px;
+    background: url("../img/icons/html-academy-logo.svg") no-repeat;
+  }
 }

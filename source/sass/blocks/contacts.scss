@@ -1,7 +1,11 @@
+.contacts {
+  padding-top: 28px;
+}
+
 .contacts__wrapper {
-  width: 320px;
+  // width: 320px;
   padding: 0 20px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .contacts__cooperation {
@@ -28,8 +32,28 @@
   font-style: normal;
   display: block;
   max-width: 140px;
+  margin-bottom: 28px;
+}
+
+.contacts__map-wrapper {
+  position: relative;
 }
 
 .contacts__map {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.contacts__map-image {
+  margin: 0 auto;
   margin-top: 26px;
+  display: block;
+}
+
+.program-selection + .contacts {
+  background-color: $basic-grey;
 }
