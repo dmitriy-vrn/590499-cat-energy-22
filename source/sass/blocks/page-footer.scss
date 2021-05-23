@@ -20,27 +20,22 @@
   margin: 0;
   margin-bottom: 31px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
 }
 
+.page-footer__item {
+  margin: 0 18px;
+}
+
 .page-footer__copyright {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   font-size: 16px;
   line-height: 16px;
   color: $font-color;
-
-  &::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    width: 27px;
-    height: 34px;
-    background: url("../img/icons/html-academy-logo.svg") no-repeat;
-  }
 }

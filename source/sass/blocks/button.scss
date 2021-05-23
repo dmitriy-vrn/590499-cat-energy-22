@@ -4,8 +4,8 @@
   justify-content: center;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   padding: 7px 44px;
   color: $basic-white;
   background: $basic-green;
@@ -13,4 +13,9 @@
   cursor: pointer;
   border: none;
   width: 100%;
+
+  &--more {
+    background-color: $basic-grey;
+    color: $font-color;
+  }
 }

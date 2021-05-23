@@ -1,11 +1,13 @@
 .contacts {
   padding-top: 28px;
+
+  &--more {
+    background-color: $basic-grey;
+  }
 }
 
 .contacts__wrapper {
-  // width: 320px;
   padding: 0 20px;
-  // margin: 0 auto;
 }
 
 .contacts__cooperation {
